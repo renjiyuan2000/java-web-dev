@@ -111,8 +111,8 @@
     <ul class="nav">
         <li>首页</li>
         <li>浏览发现</li>
-        <li>话题广场</li>
-        <li>我的豆瓣</li>
+        <li>历史帖子</li>
+        <li>我的发言</li>
     </ul>
     <label>
         <input type="text" placeholder="搜索你感兴趣的内容和人" class="search-input">
@@ -132,9 +132,10 @@
             <br>
             <div class="item">
                 <ul class="nav">
-                    <li>我的日记</li>
+                    <li>动态</li>
                 </ul>
-                <p>在豆瓣上写日记，记录自己的生活、想法。</p>
+                <p>刚刚更新了照片</p>
+                <p>昨天在 <a href=""style="color: blue">《新中国阅兵》</a>下发言</p>
             </div>
             <div class="item">
                 <ul class="nav">
@@ -144,9 +145,9 @@
             </div>
             <div class="item">
                 <ul class="nav">
-                    <li>我读</li>
+                    <li>爱好偏向</li>
                 </ul>
-                <p>5本想读</p>
+                <p>二战 步枪 新时代</p>
             </div>
             <div class="item">
                 <ul class="nav">
@@ -178,26 +179,26 @@
             <br>
             <div class="item">
                 <ul class="nav">
-                    <li>我的广播· · · · · · (全部)</li>
+                    <li>你或许感兴趣的</li>
                 </ul>
                 <br>
                 <div class="read">
-                    <p><a href="">${user.nickname}</a>想读
-                        <a href="">写给大忙人的Java SE 8</a>
+                    <p><a href="">${user.nickname}</a>推荐
+                        <a href="">你好，新中国</a>
                     </p>
-                    <p style="color: #9b9b9b;">2018年1月2日</p>
+                    <p style="color: #9b9b9b;">201年10月2日</p>
                 </div>
                 <div class="read">
-                    <p><a href="">${user.nickname}</a>想读
-                        <a href="">写给大忙人的Java SE 8</a>
+                    <p><a href="">${user.nickname}</a>推荐
+                        <a href=""> 观察特朗普网</a>
                     </p>
-                    <p style="color: #9b9b9b;">2018年1月2日</p>
+                    <p style="color: #9b9b9b;">2019年10月3日</p>
                 </div>
                 <div class="read">
-                    <p><a href="">${user.nickname}</a>想读
-                        <a href="">写给大忙人的Java SE 8</a>
+                    <p><a href="">${user.nickname}</a>推荐
+                        <a href="">易燃易爆炸</a>
                     </p>
-                    <p style="color: #9b9b9b;">2018年1月2日</p>
+                    <p style="color: #9b9b9b;">2019年10月4日</p>
                 </div>
             </div>
         </div>
