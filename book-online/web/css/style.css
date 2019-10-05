@@ -80,6 +80,28 @@ a:hover {
 #top ul li {
     flex: 0 0 90px;
 }
+#top1 {
+    height: 50px;
+    background: linear-gradient(to bottom, rgb(130, 6, 28), rgb(157, 17, 131));
+    color: #d5d5d5;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+#top1 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#top1 ul li {
+    flex: 0 0 90px;
+}
+
 
 .avatar {
     width: 33px;

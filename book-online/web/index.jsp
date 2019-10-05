@@ -11,11 +11,11 @@
     }
     #search {
       height: 80px;
-      background-color: rgb(246, 246, 241);
+      background-color:yellow;
       display: flex;
       align-items: center;
-      padding-left: 8%;
-      margin-bottom: 10px;
+      padding-left: 6%;
+      margin-bottom: 20px;
     }
     .search-input {
       flex: 0 0 40%;
@@ -58,6 +58,9 @@
       color: #eee;
       margin-top: 10px;
     }
+
+
+    }
   </style>
 </head>
 <body>
@@ -71,8 +74,8 @@
 
 <%--搜索区--%>
 <div id="search">
-  <h2>读书时刻</h2>
-  <input type="text" placeholder="书名、作者、ISBN" class="search-input">
+  <h2>搜索</h2>
+  <input type="text" placeholder="建国70周年阅兵" class="search-input">
   <div class="search-btn">
     <img src="images/search.png" alt="">
   </div>
@@ -82,8 +85,8 @@
 <div class="container">
   <div class="row">
     <%--左侧2/3主体部分--%>
-    <div class="col-8">
-      <h3>新书速递</h3>
+    <div class="col-6">
+      <h3>战争书籍推荐</h3>
       <hr>
       <div class="row">
         <%--遍历图书数据集合，将每个图书对象放入页面对象--%>
@@ -92,7 +95,7 @@
             pageContext.setAttribute("book", book);
         %>
         <%--引用col-2表示每行显示5本，再追加card细节样式--%>
-        <div class="col-2 card">
+        <div class="col-6 card">
           <%--点击每本图书封面图，地址栏跳转为/detail/id,进入图书详情Servlet--%>
           <a href="${pageContext.request.contextPath}/detail/${book.id}">
             <img src="images/${book.cover}" alt="">
@@ -106,9 +109,22 @@
       </div>
     </div>
     <div class="col-4">
-      <h3>热门标签</h3>
+      <h3>快讯</h3>
       <hr>
-      <img src="images/right.png" alt="">
+
+      <a href="${pageContext.request.contextPath}"style="color: red"> >新中国70周年阅兵 </a>
+      <hr>
+
+      <a href="${pageContext.request.contextPath}"style="color: red"> >阅兵仪式配乐 </a> <hr>
+      <a href="${pageContext.request.contextPath}"style="color: red"> >美特朗普意欲创立国营媒体与纽约时报对敌 </a>
+      <hr>
+      <a href="${pageContext.request.contextPath}"style="color: red"> >印度国父甘地骨灰被偷</a> <hr>
+      <a href="${pageContext.request.contextPath}"style="color: red"> >印度击落自家直升机 </a> <hr>
+      <a href="${pageContext.request.contextPath}"style="color: red"> >印度新隐身护卫舰船壳下水 </a> <hr>
+      <a href="${pageContext.request.contextPath}"style="color: red"> >中国东风-41导弹引起美国注意 </a> <hr>
+      <a href="${pageContext.request.contextPath}"style="color: red"> > 中俄关系</a><hr>
+      <h4>辱法警告</h4>
+      <img src="images/辱法.jpg" width=100% height=100% />
     </div>
   </div>
 
